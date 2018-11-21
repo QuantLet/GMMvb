@@ -1,13 +1,13 @@
-Name of QuantLet : DEDA_SVM_Linear
+Name of Quantlet: GMMvb
 
-Published in : 'DEDA Unit 7: Support Vector Machines (SVM)'
+Published in: 'Metis Variational Bayes'
 
-Description : 'Determines and plots the decision boundaries of a linear SVM classifier for different regularization parameters C.'
+Description: 'Using Variational Bayes (VB) to approximate the density of Gaussian Mixture Modes (GMM)'
 
-Keywords : Support vector machines, SVM, classification
+Keywords: 'Variational Bayes, Gaussian Mixture Modes, VB, GMM, Approximation, Conditional density'
 
-See also : 'DEDA_SVM_Nonlinear, DEDA_SVM_Spiral, DEDA_SVM_Swiss'
+Author: Rui Ren
 
-Author : Georg Keilbar
+See also: 'Variational Inference https://zhiyzuo.github.io/VI/'
 
-Submitted : October 16 2018 by Georg Keilbar
+Submitted: 'Wed, Nov 21 2018 by Rui Ren'
