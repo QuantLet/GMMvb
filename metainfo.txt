@@ -1,0 +1,14 @@
+Name of Quantlet: GMMvb
+
+Published in: 'Metis Variational Bayes'
+
+Description: 'Using Variational Bayes (VB) to approximate Gaussian Mixture Modes (GMM)'
+
+Keywords: 'Variational Bayes, Gaussian Mixture Modes, VB, GMM, Approximation, Conditional density'
+
+Author: Rui Ren
+
+See also: 'Variational Inference https://zhiyzuo.github.io/VI/'
+
+Submitted: 'Wed, Nov 21 2018 by Rui Ren'
+
