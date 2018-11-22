@@ -32,7 +32,7 @@ color = ['blue', 'green', 'orange', 'yellow', 'red']
 
 n = 1000
 # Simulated data
-mixture_selection_matrix = np.identity(K) #np.identity(K) is I
+mixture_selection_matrix = np.identity(K) 
 N = np.random.choice(K, n)
 
 from collections import defaultdict
@@ -41,15 +41,15 @@ data_resp=defaultdict(list)
 plt.figure(1)
 for i in range(n):
     # pick category
-    mean = np.dot(mixture_selection_matrix[N[i]], mu) #mixture_selection_matrix[1]=array([0., 1., 0.])
+    mean = np.dot(mixture_selection_matrix[N[i]], mu) 
     cov = np.dot(mixture_selection_matrix[N[i]], var_arr)*var
     # get point from distribution
     x = np.random.normal(mean, cov)
     data.append(x)
-    data_resp[N[i]].append(x)  #with the same N[i], with the same mean
+    data_resp[N[i]].append(x) 
 
 
-#fig = plt.scatter(x[0], x[1], s=50, c=color[N[i]])
+#figure
 for k in range(K):
     plt.hist(data_resp[k], bins=30, color=color[k], histtype='step', lw=2)
 plt.hist(data, color='k', bins=90, alpha=0.2) #, alpha=0.2 colors transparency
@@ -69,7 +69,7 @@ def VI(K, prior_std, n, data):
 
     c_est = np.zeros((n, K))  # 1000*3 matrix
     for i in range(n):
-        c_est[i, np.random.choice(K)] = 1 #randomly choose a 1 in each row vector
+        c_est[i, np.random.choice(K)] = 1 
 
     # Initiate CAVI iterations
     while (True):
